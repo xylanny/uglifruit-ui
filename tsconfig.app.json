@@ -1,0 +1,15 @@
+{
+  // 继承Vue官方推荐的DOM环境配置
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+
+  "include": ["packages/**/*.ts", "packages/**/*.vue"],
+  "exclude": ["packages/**/*.config.ts"],
+
+  "compilerOptions": {
+    "types": ["vite/client"],
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  }
+}
