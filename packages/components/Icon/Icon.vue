@@ -16,7 +16,7 @@ import { omit } from "lodash-es";
 import { computed } from "vue";
 
 defineOptions({
-  name: "TaIcon",
+  name: "UIcon",
   inheritAttrs: false,
 });
 
