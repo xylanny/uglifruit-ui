@@ -1,0 +1,62 @@
+/* 统一采用边框-盒模型，width和height同时包含内容、内边距和边框 */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* 移除正文块级元素的默认外距 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* 列表时移除样式，保留ul/ol的语义和缩进能力 */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+/* 防止内联元素底部间隙，组件内图片更可控 */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 修正表单控件元素的字体 */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 文本溢出处理，长单词不撑破容器 */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
