@@ -11,7 +11,7 @@ describe("图标渲染", () => {
   it("将Props交给FontAwesome组件", () => {
     const wrapper = mount(Icon, { props: { icon: faUser } });
     expect(wrapper.element.tagName).toBe("I");
-    expect(wrapper.classes()).toContain("ta-icon");
+    expect(wrapper.classes()).toContain("u-icon");
     const svg = wrapper.find("svg");
     expect(svg.exists()).toBe(true);
     expect(svg.classes()).toContain("fa-user");
@@ -34,12 +34,12 @@ describe("图标渲染", () => {
     ] as const) {
       expect(
         mount(Icon, { props: { icon: faUser, type } }).classes(),
-      ).toContain(`ta-icon--${type}`);
+      ).toContain(`u-icon--${type}`);
     }
     expect(
       mount(Icon, { props: { icon: faUser } })
         .classes()
-        .filter((name) => name.startsWith("ta-icon--")),
+        .filter((name) => name.startsWith("u-icon--")),
     ).toEqual([]);
   });
 
@@ -79,7 +79,7 @@ describe("图标渲染", () => {
     expect(wrapper.attributes("id")).toBe("my-icon");
     expect(wrapper.attributes("data-test")).toBe("icon");
     expect(wrapper.classes()).toEqual(
-      expect.arrayContaining(["ta-icon", "extra"]),
+      expect.arrayContaining(["u-icon", "extra"]),
     );
   });
 });

@@ -1,7 +1,7 @@
 <template>
   <i
-    class="ta-icon"
-    :class="[type ? `ta-icon--${type}` : '']"
+    class="u-icon"
+    :class="[type ? `u-icon--${type}` : '']"
     :style="customStyles"
     v-bind="$attrs"
   >
