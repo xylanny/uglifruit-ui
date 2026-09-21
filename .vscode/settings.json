@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["esbuild", "uglifruit", "uglifruits", "xylanny"],
+  "cSpell.words": [
+    "esbuild",
+    "fontawesome",
+    "fortawesome",
+    "uglifruit",
+    "uglifruits",
+    "xylanny"
+  ],
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
