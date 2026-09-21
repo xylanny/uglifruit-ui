@@ -61,6 +61,24 @@ importers:
         specifier: workspace:*
         version: link:../utils
 
+  packages/core:
+    devDependencies:
+      '@fortawesome/fontawesome-svg-core':
+        specifier: ^7.3.1
+        version: 7.3.1
+      '@fortawesome/free-solid-svg-icons':
+        specifier: ^7.3.1
+        version: 7.3.1
+      '@uglifruits/components':
+        specifier: workspace:*
+        version: link:../components
+      '@uglifruits/theme':
+        specifier: workspace:*
+        version: link:../theme
+      '@uglifruits/utils':
+        specifier: workspace:*
+        version: link:../utils
+
   packages/theme: {}
 
   packages/utils: {}

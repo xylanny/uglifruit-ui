@@ -1,0 +1,17 @@
+{
+  "name": "@uglifruits/ui",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
+    "@uglifruits/components": "workspace:*",
+    "@uglifruits/theme": "workspace:*",
+    "@uglifruits/utils": "workspace:*"
+  }
+}
