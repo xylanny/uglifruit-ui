@@ -1,0 +1,9 @@
+{
+  "name": "@uglifruits/utils",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"just test placeholder!\" && exit 0"
+  }
+}
