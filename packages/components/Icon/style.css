@@ -1,4 +1,4 @@
-.ta-icon {
+.u-icon {
     --u-icon-color: currentcolor;
 
     position: relative;
@@ -12,22 +12,22 @@
     fill: var(--u-icon-color);
 }
 
-.ta-icon--primary {
+.u-icon--primary {
     --u-icon-color: var(--u-color-primary);
 }
 
-.ta-icon--info {
+.u-icon--info {
     --u-icon-color: var(--u-color-info);
 }
 
-.ta-icon--success {
+.u-icon--success {
     --u-icon-color: var(--u-color-success);
 }
 
-.ta-icon--warning {
+.u-icon--warning {
     --u-icon-color: var(--u-color-warning);
 }
 
-.ta-icon--danger {
+.u-icon--danger {
     --u-icon-color: var(--u-color-danger);
 }
