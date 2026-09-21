@@ -1,3 +1,8 @@
 {
-  "cSpell.words": ["uglifruit", "xylanny"]
+  "cSpell.words": ["esbuild", "uglifruit", "uglifruits", "xylanny"],
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json"
+  }
 }
