@@ -1,0 +1,33 @@
+.ta-icon {
+    --ta-icon-color: currentcolor;
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: inherit;
+    line-height: 1;
+    vertical-align: middle;
+    color: var(--ta-icon-color);
+    fill: var(--ta-icon-color);
+}
+
+.ta-icon--primary {
+    --ta-icon-color: var(--ta-color-primary);
+}
+
+.ta-icon--info {
+    --ta-icon-color: var(--ta-color-info);
+}
+
+.ta-icon--success {
+    --ta-icon-color: var(--ta-color-success);
+}
+
+.ta-icon--warning {
+    --ta-icon-color: var(--ta-color-warning);
+}
+
+.ta-icon--danger {
+    --ta-icon-color: var(--ta-color-danger);
+}
