@@ -1,133 +1,133 @@
 :root {
     /* 主颜色 */
-    --ta-color-primary: #f5a623;
-    --ta-color-success: #13ce66;
-    --ta-color-warning: #ffc82c;
-    --ta-color-danger: #ff4949;
-    --ta-color-info: #78a4fa;
+    --u-color-primary: #f5a623;
+    --u-color-success: #13ce66;
+    --u-color-warning: #ffc82c;
+    --u-color-danger: #ff4949;
+    --u-color-info: #78a4fa;
 
     /* 浅色 */
-    --ta-color-primary-light: #fef4e3;
-    --ta-color-success-light: #e3f9ed;
-    --ta-color-warning-light: #fff8e6;
-    --ta-color-danger-light: #ffe9e9;
-    --ta-color-info-light: #eff4fe;
+    --u-color-primary-light: #fef4e3;
+    --u-color-success-light: #e3f9ed;
+    --u-color-warning-light: #fff8e6;
+    --u-color-danger-light: #ffe9e9;
+    --u-color-info-light: #eff4fe;
 
     /* 更浅色 */
-    --ta-color-primary-lighter: #fde8c4;
-    --ta-color-success-lighter: #c4f3d9;
-    --ta-color-warning-lighter: #fff1ca;
-    --ta-color-danger-lighter: #ffd2d2;
-    --ta-color-info-lighter: #dde8fe;
+    --u-color-primary-lighter: #fde8c4;
+    --u-color-success-lighter: #c4f3d9;
+    --u-color-warning-lighter: #fff1ca;
+    --u-color-danger-lighter: #ffd2d2;
+    --u-color-info-lighter: #dde8fe;
 
     /* 深色(hover) */
-    --ta-color-primary-dark: #d98a16;
-    --ta-color-success-dark: #10af57;
-    --ta-color-warning-dark: #d9aa25;
-    --ta-color-danger-dark: #d93e3e;
-    --ta-color-info-dark: #668bd5;
+    --u-color-primary-dark: #d98a16;
+    --u-color-success-dark: #10af57;
+    --u-color-warning-dark: #d9aa25;
+    --u-color-danger-dark: #d93e3e;
+    --u-color-info-dark: #668bd5;
 
     /* 更深色(active) */
-    --ta-color-primary-darker: #b8730f;
-    --ta-color-success-darker: #0e9449;
-    --ta-color-warning-darker: #b89020;
-    --ta-color-danger-darker: #b83535;
-    --ta-color-info-darker: #5676b4;
+    --u-color-primary-darker: #b8730f;
+    --u-color-success-darker: #0e9449;
+    --u-color-warning-darker: #b89020;
+    --u-color-danger-darker: #b83535;
+    --u-color-info-darker: #5676b4;
 
     /* 中性色 */
-    --ta-color-white: #ffffff;
-    --ta-color-black: #000000;
+    --u-color-white: #ffffff;
+    --u-color-black: #000000;
 
-    --ta-color-text: #1f1d24;
-    --ta-color-text-regular: #4a4553;
-    --ta-color-text-secondary: #6f6879;
-    --ta-color-text-placeholder: #a8a3b0;
-    --ta-color-text-disabled: #c2bec9;
+    --u-color-text: #1f1d24;
+    --u-color-text-regular: #4a4553;
+    --u-color-text-secondary: #6f6879;
+    --u-color-text-placeholder: #a8a3b0;
+    --u-color-text-disabled: #c2bec9;
 
-    --ta-color-border: #dcdfe6;
-    --ta-color-border-light: #e4e7ed;
-    --ta-color-border-lighter: #ebeef5;
+    --u-color-border: #dcdfe6;
+    --u-color-border-light: #e4e7ed;
+    --u-color-border-lighter: #ebeef5;
 
-    --ta-color-bg: #ffffff;
-    --ta-color-bg-page: #f8f7fb;
-    --ta-color-bg-disabled: #f5f6f8;
+    --u-color-bg: #ffffff;
+    --u-color-bg-page: #f8f7fb;
+    --u-color-bg-disabled: #f5f6f8;
 
     /* 字体 */
-    --ta-font-family:
+    --u-font-family:
         -apple-system, blinkmacsystemfont, "Helvetica Neue", "PingFang SC",
         "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
-    --ta-font-size-sm: 12px;
-    --ta-font-size-base: 14px;
-    --ta-font-size-lg: 16px;
-    --ta-font-weight-medium: 500;
+    --u-font-size-sm: 12px;
+    --u-font-size-base: 14px;
+    --u-font-size-lg: 16px;
+    --u-font-weight-medium: 500;
 
     /* 圆角 */
-    --ta-border-radius-sm: 2px;
-    --ta-border-radius-base: 4px;
-    --ta-border-radius-lg: 8px;
-    --ta-border-radius-round: 999px;
+    --u-border-radius-sm: 2px;
+    --u-border-radius-base: 4px;
+    --u-border-radius-lg: 8px;
+    --u-border-radius-round: 999px;
 
     /* 动效 */
-    --ta-transition-duration: 0.2s;
-    --ta-transition-function: ease-in-out;
-    --ta-transition-base: all var(--ta-transition-duration) var(--ta-transition-function);
+    --u-transition-duration: 0.2s;
+    --u-transition-function: ease-in-out;
+    --u-transition-base: all var(--u-transition-duration) var(--u-transition-function);
 
     /* 阴影 */
-    --ta-box-shadow-sm: 0 1px 2px rgb(31 29 36 / 8%);
-    --ta-box-shadow-base: 0 2px 8px rgb(31 29 36 / 12%);
-    --ta-box-shadow-lg: 0 6px 20px rgb(31 29 36 / 16%);
+    --u-box-shadow-sm: 0 1px 2px rgb(31 29 36 / 8%);
+    --u-box-shadow-base: 0 2px 8px rgb(31 29 36 / 12%);
+    --u-box-shadow-lg: 0 6px 20px rgb(31 29 36 / 16%);
 }
 
 /* 暗色模式，给<html>加上.dark即可 */
 html.dark {
     /* 主色在暗底上需要提亮才够对比度 */
-    --ta-color-primary: #ffb84d;
-    --ta-color-success: #3ed598;
-    --ta-color-warning: #ffc82c;
-    --ta-color-danger: #ff6b6b;
-    --ta-color-info: #8ab0ff;
+    --u-color-primary: #ffb84d;
+    --u-color-success: #3ed598;
+    --u-color-warning: #ffc82c;
+    --u-color-danger: #ff6b6b;
+    --u-color-info: #8ab0ff;
 
     /* 浅色系在暗色下翻转成暗底 */
-    --ta-color-primary-light: #3a2e1a;
-    --ta-color-success-light: #16332a;
-    --ta-color-warning-light: #3a3118;
-    --ta-color-danger-light: #3a1f24;
-    --ta-color-info-light: #1f2a3d;
+    --u-color-primary-light: #3a2e1a;
+    --u-color-success-light: #16332a;
+    --u-color-warning-light: #3a3118;
+    --u-color-danger-light: #3a1f24;
+    --u-color-info-light: #1f2a3d;
 
-    --ta-color-primary-lighter: #4d3d21;
-    --ta-color-success-lighter: #1d4536;
-    --ta-color-warning-lighter: #4d4021;
-    --ta-color-danger-lighter: #4d282e;
-    --ta-color-info-lighter: #293850;
+    --u-color-primary-lighter: #4d3d21;
+    --u-color-success-lighter: #1d4536;
+    --u-color-warning-lighter: #4d4021;
+    --u-color-danger-lighter: #4d282e;
+    --u-color-info-lighter: #293850;
 
     /* 暗色下 hover/active 用更亮的色 */
-    --ta-color-primary-dark: #ffc86b;
-    --ta-color-success-dark: #5ce1ae;
-    --ta-color-warning-dark: #ffd65c;
-    --ta-color-danger-dark: #ff8e8e;
-    --ta-color-info-dark: #a6c3ff;
+    --u-color-primary-dark: #ffc86b;
+    --u-color-success-dark: #5ce1ae;
+    --u-color-warning-dark: #ffd65c;
+    --u-color-danger-dark: #ff8e8e;
+    --u-color-info-dark: #a6c3ff;
 
-    --ta-color-primary-darker: #ffd98a;
-    --ta-color-success-darker: #7de9bf;
-    --ta-color-warning-darker: #ffe08a;
-    --ta-color-danger-darker: #ffafaf;
-    --ta-color-info-darker: #c2d4ff;
+    --u-color-primary-darker: #ffd98a;
+    --u-color-success-darker: #7de9bf;
+    --u-color-warning-darker: #ffe08a;
+    --u-color-danger-darker: #ffafaf;
+    --u-color-info-darker: #c2d4ff;
 
-    --ta-color-text: #e8e4f0;
-    --ta-color-text-regular: #cfc9dc;
-    --ta-color-text-secondary: #a9a2b8;
-    --ta-color-text-placeholder: #7e778c;
-    --ta-color-text-disabled: #5c5668;
+    --u-color-text: #e8e4f0;
+    --u-color-text-regular: #cfc9dc;
+    --u-color-text-secondary: #a9a2b8;
+    --u-color-text-placeholder: #7e778c;
+    --u-color-text-disabled: #5c5668;
 
-    --ta-color-border: #3a3345;
-    --ta-color-border-light: #322c3c;
-    --ta-color-border-lighter: #2a2432;
+    --u-color-border: #3a3345;
+    --u-color-border-light: #322c3c;
+    --u-color-border-lighter: #2a2432;
 
-    --ta-color-bg: #1f1b27;
-    --ta-color-bg-page: #17141d;
-    --ta-color-bg-disabled: #2a2432;
+    --u-color-bg: #1f1b27;
+    --u-color-bg-page: #17141d;
+    --u-color-bg-disabled: #2a2432;
 
-    --ta-box-shadow-sm: 0 1px 2px rgb(0 0 0 / 32%);
-    --ta-box-shadow-base: 0 2px 8px rgb(0 0 0 / 40%);
-    --ta-box-shadow-lg: 0 6px 20px rgb(0 0 0 / 48%);
+    --u-box-shadow-sm: 0 1px 2px rgb(0 0 0 / 32%);
+    --u-box-shadow-base: 0 2px 8px rgb(0 0 0 / 40%);
+    --u-box-shadow-lg: 0 6px 20px rgb(0 0 0 / 48%);
 }
