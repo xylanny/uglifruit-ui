@@ -60,6 +60,7 @@
     --u-font-size-base: 14px;
     --u-font-size-lg: 16px;
     --u-font-weight-medium: 500;
+    --u-font-family-mono: "JetBrains Mono", "Fira Code", "SFMono-Regular", consolas, monospace;
 
     /* 圆角 */
     --u-border-radius-sm: 2px;
