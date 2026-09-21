@@ -2,6 +2,7 @@
   "name": "uglifruit-ui",
   "private": true,
   "scripts": {
+    "docs:dev": "pnpm --filter @uglifruits/docs dev",
     "test": "pnpm -r test",
     "coverage": "pnpm -r coverage"
   },
