@@ -19,6 +19,9 @@
   "sideEffects": [
     "**/*.css"
   ],
+  "peerDependencies": {
+    "vue": "^3.5.42"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "test": "vitest run",
