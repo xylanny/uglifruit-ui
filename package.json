@@ -7,7 +7,7 @@
     "play:build": "pnpm --filter @uglifruits/play build",
     "test": "pnpm -r test",
     "coverage": "pnpm -r coverage",
-    "build": "pnpm --filter @uglifruits/ui build"
+    "build": "pnpm -r build"
   },
   "devDependencies": {
     "@changesets/cli": "^3.0.3",
