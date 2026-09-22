@@ -5,8 +5,8 @@
   "format": "auto",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [["@taro-ui/core", "@taro-ui/utils", "@taro-ui/theme"]],
+  "fixed": [["@uglifruits/core", "@uglifruits/utils", "@uglifruits/theme"]],
   "linked": [],
   "updateInternalDependencies": "patch",
-  "ignore": ["@uglifruits/components", "@taro-ui/docs", "@taro-ui/play"]
+  "ignore": ["@uglifruits/components", "@uglifruits/docs", "@uglifruits/play"]
 }
