@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.app.json",
+
+  "compilerOptions": {
+    "noEmit": false,
+    "rootDir": ".."
+  },
+
+  "include": [
+    "*.ts",
+    "../components/**/*.ts",
+    "../components/**/*.vue",
+    "../utils/**/*.ts"
+  ],
+
+  "exclude": [
+    "**/__tests__/**",
+    "../components/**/__tests__/**",
+    "../utils/**/__tests__/**",
+    "**/*.config.ts",
+    "../components/*.config.ts",
+    "../utils/*.config.ts",
+    "dist/**"
+  ]
+}

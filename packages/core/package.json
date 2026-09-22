@@ -4,8 +4,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "clean": "rimraf dist",
     "test": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "build:es": "vite build --config vite.es.config.ts",
+    "build:umd": "vite build --config vite.umd.config.ts",
+    "build": "pnpm run clean && pnpm run build:es && pnpm run build:umd"
   },
   "devDependencies": {
     "@uglifruits/components": "workspace:*",
