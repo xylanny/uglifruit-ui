@@ -80,6 +80,10 @@ importers:
         version: link:../utils
 
   packages/core:
+    dependencies:
+      vue:
+        specifier: ^3.5.42
+        version: 3.5.42(typescript@6.0.3)
     devDependencies:
       '@uglifruits/components':
         specifier: workspace:*
