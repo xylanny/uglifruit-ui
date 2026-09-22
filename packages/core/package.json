@@ -4,7 +4,7 @@
   "type": "module",
   "main": "./dist/es/index.js",
   "module": "./dist/es/index.js",
-  "types": "./dist/types/index.d.ts",
+  "types": "./dist/types/core/index.d.ts",
   "unpkg": "./dist/umd/index.umd.js",
   "jsdelivr": "./dist/umd/index.umd.js",
   "exports": {
