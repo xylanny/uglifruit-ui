@@ -13,7 +13,7 @@
   "files": [
     "dist"
   ],
-  "description": "a utils lib for helping core subpackage development",
+  "description": "Utils for Uglifruits UI",
   "keywords": [
     "utils",
     "helpful",

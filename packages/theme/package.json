@@ -1,8 +1,23 @@
 {
   "name": "@uglifruits/theme",
   "version": "0.0.1",
-  "main": "index.css",
-  "type": "module",
+  "exports": {
+    ".": "./index.css",
+    "./index.css": "./index.css",
+    "./reset.css": "./reset.css"
+  },
+  "files": [
+    "index.css",
+    "reset.css"
+  ],
+  "description": "Theme styles for uglifruits UI",
+  "keywords": [
+    "theme",
+    "colorful",
+    "easy"
+  ],
+  "author": "xylanny",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"just test placeholder!\" && exit 0"
   }
