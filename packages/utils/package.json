@@ -3,8 +3,28 @@
   "version": "0.0.1",
   "main": "index.js",
   "type": "module",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "description": "a utils lib for helping core subpackage development",
+  "keywords": [
+    "utils",
+    "helpful",
+    "refined"
+  ],
+  "author": "xylanny",
+  "license": "MIT",
   "scripts": {
+    "dev": "vite build --config vite.config.ts --watch",
     "test": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "build": "vite build --config vite.config.ts"
   }
 }
