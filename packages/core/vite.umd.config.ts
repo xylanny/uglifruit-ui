@@ -10,7 +10,7 @@ export default defineConfig({
 
     lib: {
       entry: resolve(import.meta.dirname, "./index.ts"),
-      name: "taro-ui",
+      name: "uglifruits-ui",
       fileName: "index",
       formats: ["umd"],
     },
