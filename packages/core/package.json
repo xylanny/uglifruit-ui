@@ -9,7 +9,7 @@
   "jsdelivr": "./dist/umd/index.umd.js",
   "exports": {
     ".": {
-      "types": "./dist/types/index.d.ts",
+      "types": "./dist/types/core/index.d.ts",
       "import": "./dist/es/index.js"
     }
   },
