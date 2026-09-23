@@ -173,7 +173,7 @@ function scrollToTop() {
 }
 
 function scrollToBottom() {
-  setScrollTop(contentHeight.value);
+  setScrollTop(Math.max(contentHeight.value - containerHeight.value, 0));
 }
 
 defineExpose<VListExpose>({
