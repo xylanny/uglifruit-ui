@@ -3,8 +3,11 @@
     "esbuild",
     "fontawesome",
     "fortawesome",
+    "overscan",
     "uglifruit",
     "uglifruits",
+    "UVLIST",
+    "vlist",
     "xylanny"
   ],
   "explorer.fileNesting.enabled": true,
