@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.2.0
+
+### Minor Changes
+
+- c9affaa: add Collapse component
+
 ## 0.1.0
 
 ### Minor Changes
