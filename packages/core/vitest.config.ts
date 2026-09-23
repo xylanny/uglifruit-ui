@@ -9,12 +9,18 @@ export default defineConfig({
     include: ["__tests__/**/*.{test,spec}.{ts,tsx}"],
     clearMocks: true,
     restoreMocks: true,
-
     coverage: {
       provider: "v8",
       reporter: ["text"],
       include: ["**/*.{ts,tsx,vue}"],
-      exclude: ["components.ts"],
+      exclude: [
+        "components.ts",
+        "dist/**",
+        "**/*.d.ts",
+        "**/*.config.ts",
+        "**/__tests__/**",
+        "**/node_modules/**",
+      ],
     },
   },
 });

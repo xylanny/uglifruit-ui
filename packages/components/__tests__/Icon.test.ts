@@ -2,7 +2,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { mount } from "@vue/test-utils";
 import { describe, expect, it } from "vitest";
-import Icon from "../Icon.vue";
+import Icon from "../Icon/Icon.vue";
 
 // 前提：将图标注册进FontAwesome的library
 library.add(faUser);

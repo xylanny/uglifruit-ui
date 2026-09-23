@@ -65,15 +65,19 @@ describe("测试attachInstall函数", () => {
 });
 
 describe("测试createInstaller函数", () => {
-  it("返回函数且满足Vue插件的函数式写法", () => {
-    expect(typeof createInstaller([])).toBe("function");
+  it("返回对象且满足Vue插件的对象式写法", () => {
+    const installer = createInstaller([]);
+
+    expect(typeof installer).toBe("object");
+    expect(installer).not.toBeNull();
+    expect(typeof installer.install).toBe("function");
   });
 
   it("没有任何子插件时，安装不会调用app.use", () => {
     // 创建伪造的App实例，解构出use()
     const { app, use } = createSpyApp();
 
-    createInstaller([])(app);
+    createInstaller([]).install(app);
 
     expect(use).not.toHaveBeenCalled();
   });
@@ -86,8 +90,8 @@ describe("测试createInstaller函数", () => {
       { install: vi.fn() },
       { install: vi.fn() },
     ];
-    // 创建总安装器，立即调用
-    createInstaller(plugins)(app);
+    // 创建总安装器，立即调用 install
+    createInstaller(plugins).install(app);
     // 断言app.use()被调用次数等于插件数量
     expect(use).toHaveBeenCalledTimes(plugins.length);
     expect(use.mock.calls.map(([plugin]) => plugin)).toEqual(plugins);

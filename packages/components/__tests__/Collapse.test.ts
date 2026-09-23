@@ -3,8 +3,8 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { mount } from "@vue/test-utils";
 import { describe, expect, it, vi } from "vitest";
 import { h, nextTick } from "vue";
-import Collapse from "../Collapse.vue";
-import CollapseItem from "../CollapseItem.vue";
+import Collapse from "../Collapse/Collapse.vue";
+import CollapseItem from "../Collapse/CollapseItem.vue";
 
 library.add(faAngleRight);
 

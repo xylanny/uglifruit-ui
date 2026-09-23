@@ -6,7 +6,7 @@ export default defineConfig({
   test: {
     name: "components",
     environment: "jsdom",
-    include: ["**/__tests__/**/*.{test,spec}.{ts,tsx}"],
+    include: ["__tests__/**/*.{test,spec}.{ts,tsx}"],
     clearMocks: true,
     restoreMocks: true,
 
@@ -15,7 +15,6 @@ export default defineConfig({
       reporter: ["text"],
       include: ["**/*.{ts,tsx,vue}"],
       exclude: [
-        "index.ts",
         "**/index.ts",
         "**/*.config.ts",
         "**/*.d.ts",
