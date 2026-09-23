@@ -1,5 +1,6 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
+  faAngleRight,
   faCheck,
   faHeart,
   faPlus,
@@ -21,6 +22,7 @@ library.add(
   faCheck,
   faXmark,
   faPlus,
+  faAngleRight,
 );
 
 // 在浏览器环境运行的前置配置
