@@ -1,3 +1,3 @@
 export { useRaf } from "./useRaf";
 
-export * from "./type";
+export * from "./types";
