@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.3.1
+
+### Patch Changes
+
+- 35b4b4c: fulfil building
+
 ## 0.3.0
 
 ### Minor Changes
