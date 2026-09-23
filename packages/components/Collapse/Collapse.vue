@@ -7,10 +7,10 @@
 <script setup lang="ts">
 import { provide, ref, watch, watchEffect } from "vue";
 import type { CollapseEmits, CollapseItemName, CollapseProps } from "./types";
-import { COLLAPSE_CTX_KEY } from "./constants";
+import { COLLAPSE_CTX_KEY, COMPONENT_NAME } from "./constants";
 
 defineOptions({
-  name: "UCollapse",
+  name: COMPONENT_NAME,
 });
 
 const props = defineProps<CollapseProps>();

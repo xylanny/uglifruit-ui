@@ -1,4 +1,4 @@
-export interface VListProps<T> {
+export interface ListProps<T> {
   items: T[]; // 列表数据
   itemKey?: string | ((item: T, index: number) => string | number | symbol); // key
   itemHeight: number; // 每项的固定高度
@@ -6,17 +6,17 @@ export interface VListProps<T> {
   buffer?: number; // 上/下缓存数
 }
 
-export interface VListEmits {
+export interface ListEmits {
   (e: "scroll", event: Event): void; // 用户滚动更新scrollTop
-  (e: "rangeChange", range: VListRange): void;
+  (e: "rangeChange", range: ListRange): void;
 }
 
-export interface VListRange {
+export interface ListRange {
   start: number;
   end: number;
 }
 
-export interface VListExpose {
+export interface ListExpose {
   scrollToIndex(index: number): void;
   scrollToTop(): void;
   scrollToBottom(): void;

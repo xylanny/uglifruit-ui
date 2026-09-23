@@ -6,15 +6,15 @@
     @scroll="handleScroll"
   >
     <!-- 幽灵容器，用于撑开滚动条 -->
-    <div class="u-vlist__phantom" :style="{ height: `${contentHeight}px` }">
+    <div class="u-list__phantom" :style="{ height: `${contentHeight}px` }">
       <div
-        class="u-vlist__content"
+        class="u-list__content"
         :style="{ transform: `translateY(${offsetY}px)` }"
       >
         <div
           v-for="(item, i) in visibleItems"
           :key="getKey(item, startIndex + i)"
-          class="u-vlist__item"
+          class="u-list__item"
           :style="{ height: `${itemHeight}px` }"
         >
           <slot :item="item" :index="startIndex + i">
@@ -29,18 +29,19 @@
 <script setup lang="ts" generic="T">
 import { computed, ref, watch } from "vue";
 import type { CSSProperties } from "vue";
-import type { VListEmits, VListExpose, VListProps, VListRange } from "./type";
+import type { ListEmits, ListExpose, ListProps, ListRange } from "./type";
 import { useRaf } from "@uglifruits/hooks";
+import { COMPONENT_NAME } from "./constants";
 
 defineOptions({
-  name: "UVList",
+  name: COMPONENT_NAME,
 });
 
-const props = withDefaults(defineProps<VListProps<T>>(), {
+const props = withDefaults(defineProps<ListProps<T>>(), {
   buffer: 10,
 });
 
-const emits = defineEmits<VListEmits>();
+const emits = defineEmits<ListEmits>();
 
 defineSlots<{
   default(props: { item: T; index: number }): unknown;
@@ -137,7 +138,7 @@ function handleScroll(event: Event) {
 }
 
 // rangeChange仅在范围真正变化时emit
-let lastRange: VListRange = { start: -1, end: -1 };
+let lastRange: ListRange = { start: -1, end: -1 };
 
 watch(
   [startIndex, endIndex],
@@ -175,7 +176,7 @@ function scrollToBottom() {
   setScrollTop(Math.max(contentHeight.value - containerHeight.value, 0));
 }
 
-defineExpose<VListExpose>({
+defineExpose<ListExpose>({
   scrollToIndex,
   scrollToTop,
   scrollToBottom,

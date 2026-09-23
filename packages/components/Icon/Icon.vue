@@ -14,9 +14,10 @@ import type { IconProps } from "./type";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { omit } from "lodash-es";
 import { computed } from "vue";
+import { COMPONENT_NAME } from "./constants";
 
 defineOptions({
-  name: "UIcon",
+  name: COMPONENT_NAME,
   inheritAttrs: false,
 });
 
