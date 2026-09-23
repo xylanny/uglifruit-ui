@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.3.4
+
+### Patch Changes
+
+- 6ff2fda: amend component name
+
 ## 0.3.3
 
 ### Patch Changes
