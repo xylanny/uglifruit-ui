@@ -1,5 +1,11 @@
 # @uglifruits/utils
 
+## 0.3.5
+
+### Patch Changes
+
+- 5579770: 修改列表组件中根元素的类名
+
 ## 0.3.4
 
 No changes in this release.
