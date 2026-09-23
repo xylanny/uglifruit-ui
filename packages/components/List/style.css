@@ -1,22 +1,22 @@
-.u-vlist {
-    --u-vlist-bg-color: var(--u-color-bg);
-    --u-vlist-text-color: var(--u-color-text-regular);
-    --u-vlist-font-size: var(--u-font-size-base);
-    --u-vlist-item-padding: 0 16px;
+.u-list {
+    --u-list-bg-color: var(--u-color-bg);
+    --u-list-text-color: var(--u-color-text-regular);
+    --u-list-font-size: var(--u-font-size-base);
+    --u-list-item-padding: 0 16px;
 
     position: relative;
     overflow-y: auto;
-    background-color: var(--u-vlist-bg-color);
-    color: var(--u-vlist-text-color);
-    font-size: var(--u-vlist-font-size);
+    background-color: var(--u-list-bg-color);
+    color: var(--u-list-text-color);
+    font-size: var(--u-list-font-size);
 }
 
-.u-vlist__phantom {
+.u-list__phantom {
     position: relative;
     width: 100%;
 }
 
-.u-vlist__content {
+.u-list__content {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,9 +25,9 @@
     will-change: transform;
 }
 
-.u-vlist__item {
+.u-list__item {
     box-sizing: border-box;
-    padding: var(--u-vlist-item-padding);
+    padding: var(--u-list-item-padding);
     overflow: hidden;
     line-height: 1.6;
 }
