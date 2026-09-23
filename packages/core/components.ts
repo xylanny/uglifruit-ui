@@ -1,4 +1,4 @@
-import { UIcon } from "@uglifruits/components";
+import { UIcon, UCollapse } from "@uglifruits/components";
 import type { Plugin } from "vue";
 
-export default [UIcon] as Plugin[];
+export default [UIcon, UCollapse] as Plugin[];
