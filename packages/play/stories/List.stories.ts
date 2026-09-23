@@ -1,17 +1,17 @@
-import { UVList } from "@uglifruits/components";
+import { UList } from "@uglifruits/components";
 import type { Meta, StoryObj } from "@storybook/vue3-vite";
 import { ref } from "vue";
 
 const meta: Meta = {
-  title: "Component/VList",
-  component: UVList as any,
+  title: "Component/List",
+  component: UList as any,
 
   render: (args: any) => ({
-    components: { UVList: UVList as any },
+    components: { UList: UList as any },
     setup: () => ({ args }),
     template: `
       <div style="width: 360px;">
-        <UVList v-bind="args" />
+        <UList v-bind="args" />
       </div>
     `,
   }),
@@ -46,11 +46,11 @@ export const Slot: Story = {
     buffer: 10,
   },
   render: (args: any) => ({
-    components: { UVList: UVList as any },
+    components: { UVList: UList as any },
     setup: () => ({ args }),
     template: `
       <div style="width: 360px;">
-        <UVList v-bind="args">
+        <UList v-bind="args">
           <template #default="{ item, index }">
             <div style="display: flex; align-items: center; gap: 12px;">
               <span
@@ -72,7 +72,7 @@ export const Slot: Story = {
               <span>{{ item }}</span>
             </div>
           </template>
-        </UVList>
+        </UList>
       </div>
     `,
   }),
@@ -86,7 +86,7 @@ export const ScrollControl: Story = {
     buffer: 10,
   },
   render: (args: any) => ({
-    components: { UVList: UVList as any },
+    components: { UVList: UList as any },
     setup() {
       const listRef = ref<any>(null);
 
@@ -103,7 +103,7 @@ export const ScrollControl: Story = {
           <button @click="scrollToIndex(49999)">中间</button>
           <button @click="scrollToIndex(99999)">底部</button>
         </div>
-        <UVList ref="listRef" v-bind="args" />
+        <UList ref="listRef" v-bind="args" />
       </div>
     `,
   }),
