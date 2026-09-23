@@ -3,4 +3,4 @@ import { attachInstall } from "@uglifruits/utils";
 
 export const UIcon = attachInstall(Icon);
 
-export * from "./type";
+export * from "./types.ts";

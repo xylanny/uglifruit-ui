@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import type { IconProps } from "./type";
+import type { IconProps } from "./types";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { omit } from "lodash-es";
 import { computed } from "vue";

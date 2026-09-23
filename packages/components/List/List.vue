@@ -24,7 +24,7 @@
 <script setup lang="ts" generic="T">
 import { computed, ref, watch } from "vue";
 import type { CSSProperties } from "vue";
-import type { ListEmits, ListExpose, ListProps, ListRange } from "./type";
+import type { ListEmits, ListExpose, ListProps, ListRange } from "./types";
 import { useRaf } from "@uglifruits/hooks";
 import { COMPONENT_NAME } from "./constants";
 

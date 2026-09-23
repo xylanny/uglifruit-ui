@@ -3,4 +3,4 @@ import List from "./List.vue";
 
 export const UList = attachInstall(List);
 
-export * from "./type.ts";
+export * from "./types.ts";
