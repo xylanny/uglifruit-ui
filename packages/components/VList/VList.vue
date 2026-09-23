@@ -161,7 +161,6 @@ function setScrollTop(value: number) {
   scrollTop.value = value;
 }
 
-// 可以用于查找（比如说使用二分查找一个输入值对应索引，然后调用该函数而滚动）
 function scrollToIndex(index: number) {
   const maxIndex = Math.max(props.items.length - 1, 0);
   const clamped = Math.min(Math.max(index, 0), maxIndex);
