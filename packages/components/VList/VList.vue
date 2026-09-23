@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts" generic="T">
-import { computed, onBeforeMount, ref, watch } from "vue";
+import { computed, ref, watch } from "vue";
 import type { CSSProperties } from "vue";
 import type { VListEmits, VListExpose, VListProps, VListRange } from "./type";
 import { useRaf } from "@uglifruits/hooks";
