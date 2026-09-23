@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.3.3
+
+### Patch Changes
+
+- e505b34: amend style short
+
 ## 0.3.2
 
 No changes in this release.
