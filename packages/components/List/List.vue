@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="u-vlist"
-    ref="_ref"
-    :style="containerStyle"
-    @scroll="handleScroll"
-  >
+  <div class="u-list" ref="_ref" :style="containerStyle" @scroll="handleScroll">
     <!-- 幽灵容器，用于撑开滚动条 -->
     <div class="u-list__phantom" :style="{ height: `${contentHeight}px` }">
       <div
