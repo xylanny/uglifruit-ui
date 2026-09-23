@@ -1,0 +1,7 @@
+{
+  "name": "@uglifruits/hooks",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "private": true
+}
