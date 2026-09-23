@@ -11,7 +11,8 @@
     ".": {
       "types": "./dist/types/core/index.d.ts",
       "import": "./dist/es/index.js"
-    }
+    },
+    "./style.css": "./dist/es/index.css"
   },
   "files": [
     "dist"
