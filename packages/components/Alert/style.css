@@ -1,0 +1,97 @@
+.u-alert {
+    --u-alert-bg-color: var(--u-color-info-light);
+    --u-alert-text-color: var(--u-color-info);
+    --u-alert-border-color: var(--u-color-info-lighter);
+    --u-alert-icon-color: var(--u-color-info);
+
+    --u-alert-padding: 8px 16px;
+    --u-alert-border-radius: var(--u-border-radius-base);
+    --u-alert-font-size: var(--u-font-size-base);
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+    padding: var(--u-alert-padding);
+    border: 1px solid var(--u-alert-border-color);
+    border-radius: var(--u-alert-border-radius);
+    background-color: var(--u-alert-bg-color);
+    color: var(--u-alert-text-color);
+    font-family: var(--u-font-family);
+    font-size: var(--u-alert-font-size);
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.u-alert.is-center {
+    justify-content: center;
+    text-align: center;
+}
+
+.u-alert--success {
+    --u-alert-bg-color: var(--u-color-success-light);
+    --u-alert-text-color: var(--u-color-success);
+    --u-alert-border-color: var(--u-color-success-lighter);
+    --u-alert-icon-color: var(--u-color-success);
+}
+
+.u-alert--warning {
+    --u-alert-bg-color: var(--u-color-warning-light);
+    --u-alert-text-color: var(--u-color-warning);
+    --u-alert-border-color: var(--u-color-warning-lighter);
+    --u-alert-icon-color: var(--u-color-warning);
+}
+
+.u-alert--danger {
+    --u-alert-bg-color: var(--u-color-danger-light);
+    --u-alert-text-color: var(--u-color-danger);
+    --u-alert-border-color: var(--u-color-danger-lighter);
+    --u-alert-icon-color: var(--u-color-danger);
+}
+
+.u-alert--info {
+    --u-alert-bg-color: var(--u-color-info-light);
+    --u-alert-text-color: var(--u-color-info);
+    --u-alert-border-color: var(--u-color-info-lighter);
+    --u-alert-icon-color: var(--u-color-info);
+}
+
+.u-alert__icon {
+    flex-shrink: 0;
+    color: var(--u-alert-icon-color);
+}
+
+.u-alert__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.u-alert__title {
+    font-weight: var(--u-font-weight-medium);
+}
+
+.u-alert__title+.u-alert__description {
+    margin-top: 4px;
+    font-size: var(--u-font-size-sm);
+    opacity: 0.85;
+}
+
+.u-alert__description {
+    word-break: break-word;
+}
+
+.u-alert__close {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--u-alert-text-color);
+    opacity: 0.6;
+    transition: var(--u-transition-base);
+}
+
+.u-alert__close:hover {
+    opacity: 1;
+}
