@@ -1,5 +1,15 @@
 # @uglifruits/ui
 
+## 0.8.0
+
+### Minor Changes
+
+- b544ca2: 注册选择框组件
+
+### Patch Changes
+
+- 052349c: 修复clearable为true却无法清空的问题
+
 ## 0.7.0
 
 ### Minor Changes
