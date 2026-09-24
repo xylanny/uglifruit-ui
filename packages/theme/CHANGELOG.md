@@ -1,5 +1,11 @@
 # @uglifruits/theme
 
+## 0.5.3
+
+### Patch Changes
+
+- 20f8022: 修改Github Release创建逻辑
+
 ## 0.5.2
 
 ### Patch Changes
