@@ -6,6 +6,7 @@ import {
   UAlert,
   UTag,
   UInput,
+  USelect,
 } from "@uglifruits/components";
 import type { Plugin } from "vue";
 
@@ -17,4 +18,5 @@ export default [
   UAlert,
   UTag,
   UInput,
+  USelect,
 ] as Plugin[];
