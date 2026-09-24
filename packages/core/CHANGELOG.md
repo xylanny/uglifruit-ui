@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.6.0
+
+### Minor Changes
+
+- 35edef8: 注册标签组件
+
 ## 0.5.3
 
 ### Patch Changes
