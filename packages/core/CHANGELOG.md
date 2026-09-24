@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.6.2
+
+### Patch Changes
+
+- f0d1e33: 添加其他子包版本号，避免vite构建问题
+
 ## 0.6.1
 
 ### Patch Changes
