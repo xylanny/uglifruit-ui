@@ -9,9 +9,9 @@
 
 ## 简介
 
-Uglifruits UI 是一套面向中后台场景的 Vue 3 组件库，使用 TypeScript 编写，提供完整的类型定义。设计上参考 Element Plus，但更轻量、更易定制。
+Uglifruits UI 是一套面向中后台场景的 Vue 3 组件库，使用 TypeScript 编写，提供完整的类型定义。轻量、易定制。
 
-- 组件按需引入，产物同时提供 ESM 与 UMD
+- 组件可被按需引入
 - 样式基于 CSS 变量，主题定制无需重新编译
 - 每个组件独立目录，便于二次开发和替换
 
@@ -86,20 +86,6 @@ createApp(App).use(UglifruitsUI).mount("#app");
 
 ```ts
 import { UButton, USelect, USelectOption } from "@uglifruits/ui";
-```
-
-### CDN
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/@uglifruits/ui/dist/es/index.css" />
-<script src="https://unpkg.com/vue@3"></script>
-<script src="https://unpkg.com/@uglifruits/ui/dist/umd/index.umd.js"></script>
-<script>
-  const { createApp } = Vue;
-  createApp({
-    template: `<u-button type="primary">按钮</u-button>`,
-  }).use(UglifruitsUI).mount("#app");
-</script>
 ```
 
 ## 图标使用
@@ -238,17 +224,9 @@ A：需要手动引入样式文件：`import "@uglifruits/ui/style.css"`。
 
 A：本库依赖 Font Awesome，需要先安装三个 peer 依赖，并用 `library.add()` 注册用到的图标。详见 [图标使用](#图标使用)。
 
-**Q：支持 Vue 2 吗？**
-
-A：不支持，本库基于 Vue 3 的 Composition API 和 `<script setup>`。
-
 **Q：如何只打包用到的组件？**
 
 A：使用具名导入即可，构建工具会做 tree-shaking。
-
-**Q：为什么安装时提示缺少 `@fortawesome/*` 依赖？**
-
-A：这三个包是 `peerDependencies`，需要显式安装，详见 [安装图标依赖](#2-安装图标依赖)。
 
 ## 许可证
 
