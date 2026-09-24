@@ -7,6 +7,7 @@ import {
   UTag,
   UInput,
   USelect,
+  USwitch,
 } from "@uglifruits/components";
 import type { Plugin } from "vue";
 
@@ -19,4 +20,5 @@ export default [
   UTag,
   UInput,
   USelect,
+  USwitch,
 ] as Plugin[];
