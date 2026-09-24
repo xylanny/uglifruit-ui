@@ -1,0 +1,101 @@
+.u-switch {
+    --u-switch-on-color: var(--u-color-primary);
+    --u-switch-off-color: var(--u-color-border);
+    --u-switch-width: 40px;
+    --u-switch-height: 20px;
+    --u-switch-action-size: 16px;
+    --u-switch-font-size: var(--u-font-size-base);
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--u-font-family);
+    font-size: var(--u-switch-font-size);
+    line-height: 1;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+}
+
+.u-switch--large {
+    --u-switch-width: 48px;
+    --u-switch-height: 24px;
+    --u-switch-action-size: 20px;
+    --u-switch-font-size: var(--u-font-size-lg);
+}
+
+.u-switch--small {
+    --u-switch-width: 32px;
+    --u-switch-height: 16px;
+    --u-switch-action-size: 12px;
+    --u-switch-font-size: var(--u-font-size-sm);
+}
+
+.u-switch.is-disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.u-switch__core {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: var(--u-switch-width);
+    height: var(--u-switch-height);
+    background-color: var(--u-switch-off-color);
+    border: 1px solid var(--u-switch-off-color);
+    border-radius: calc(var(--u-switch-height) / 2);
+    outline: none;
+    transition: var(--u-transition-base);
+}
+
+.u-switch.is-checked .u-switch__core {
+    background-color: var(--u-switch-on-color);
+    border-color: var(--u-switch-on-color);
+}
+
+.u-switch__action {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--u-switch-action-size);
+    height: var(--u-switch-action-size);
+    background-color: var(--u-color-white);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: left var(--u-transition-duration) var(--u-transition-function);
+}
+
+.u-switch.is-checked .u-switch__action {
+    left: calc(100% - var(--u-switch-action-size) - 2px);
+}
+
+.u-switch__loading {
+    font-size: 10px;
+    color: var(--u-color-text-secondary);
+}
+
+.u-switch__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.u-switch__label {
+    color: var(--u-color-text-regular);
+    transition: color var(--u-transition-base);
+}
+
+.u-switch__label.is-active {
+    color: var(--u-switch-on-color);
+}
+
+.u-switch.is-disabled .u-switch__label {
+    color: var(--u-color-text-disabled);
+}
