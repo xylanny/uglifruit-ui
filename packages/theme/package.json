@@ -1,6 +1,6 @@
 {
   "name": "@uglifruits/theme",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "exports": {
     ".": "./index.css",
     "./index.css": "./index.css",

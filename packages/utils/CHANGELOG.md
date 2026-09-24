@@ -1,5 +1,11 @@
 # @uglifruits/utils
 
+## 0.4.1
+
+### Patch Changes
+
+- b5d5246: 解决忘记构建的问题
+
 ## 0.4.0
 
 No changes in this release.
