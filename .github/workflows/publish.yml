@@ -46,11 +46,10 @@ jobs:
         with:
           version: pnpm changeset version
           publish: pnpm changeset publish
-          commit-message: "chore: version packages"
-          pr-title: "chore: version packages"
+          commit: "chore: version packages"
+          title: "chore: version packages"
+          createGithubReleases: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          push-git-tags: true
-          create-github-releases: true
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
