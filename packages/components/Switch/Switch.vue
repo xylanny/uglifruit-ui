@@ -7,18 +7,18 @@
         'is-checked': isChecked,
         'is-disabled': disabled || loading,
         'is-loading': loading,
+        'is-focus': isFocused,
       },
     ]"
-    :style="switchStyle"
     @click="handleClick"
   >
-    <!-- 左侧文字 -->
+    <!-- 左侧文字：未选中时高亮 -->
     <span
-      v-if="inactiveText || activeText"
+      v-if="inactiveText"
       class="u-switch__label u-switch__label--left"
       :class="{ 'is-active': !isChecked }"
     >
-      {{ isChecked ? activeText : inactiveText }}
+      {{ inactiveText }}
     </span>
 
     <!-- 开关主体 -->
@@ -39,19 +39,19 @@
         :name="name"
         :checked="isChecked"
         :disabled="disabled || loading"
-        @change="handleChange"
+        tabindex="-1"
         @focus="isFocused = true"
         @blur="isFocused = false"
       />
     </span>
 
-    <!-- 右侧文字（默认位置） -->
+    <!-- 右侧文字：选中时高亮 -->
     <span
-      v-if="activeText || inactiveText"
+      v-if="activeText"
       class="u-switch__label u-switch__label--right"
       :class="{ 'is-active': isChecked }"
     >
-      {{ isChecked ? activeText : inactiveText }}
+      {{ activeText }}
     </span>
   </div>
 </template>
@@ -96,16 +96,6 @@ const isFocused = ref(false);
 // 计算属性
 const isChecked = computed(() => props.modelValue === props.activeValue);
 
-const switchStyle = computed(() => {
-  if (!isChecked.value && props.inactiveColor) {
-    return { "--u-switch-on-color": props.inactiveColor };
-  }
-  if (isChecked.value && props.activeColor) {
-    return { "--u-switch-on-color": props.activeColor };
-  }
-  return {};
-});
-
 const coreStyle = computed(() => {
   const color = isChecked.value ? props.activeColor : props.inactiveColor;
   if (!color) return {};
@@ -115,10 +105,6 @@ const coreStyle = computed(() => {
 // 方法
 const handleClick = () => {
   if (props.disabled || props.loading) return;
-  _ref.value?.click();
-};
-
-const handleChange = () => {
   const newValue: SwitchValue = isChecked.value
     ? props.inactiveValue
     : props.activeValue;
