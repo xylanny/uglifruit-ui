@@ -13,6 +13,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xylanny/uglifruit-ui"
+  },
   "description": "Utils for Uglifruits UI",
   "keywords": [
     "utils",
