@@ -1,34 +1,9 @@
 {
   "name": "@uglifruits/utils",
-  "version": "0.5.2",
-  "main": "index.js",
   "type": "module",
-  "types": "./dist/types/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/types/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xylanny/uglifruit-ui"
-  },
-  "description": "Utils for Uglifruits UI",
-  "keywords": [
-    "utils",
-    "helpful",
-    "refined"
-  ],
-  "author": "xylanny",
-  "license": "MIT",
+  "private": true,
   "scripts": {
-    "dev": "vite build --config vite.config.ts --watch",
     "test": "vitest run",
-    "coverage": "vitest run --coverage",
-    "build": "vite build --config vite.config.ts"
+    "coverage": "vitest run --coverage"
   }
 }

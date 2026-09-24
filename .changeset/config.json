@@ -5,8 +5,13 @@
   "format": "auto",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [["@uglifruits/ui", "@uglifruits/utils", "@uglifruits/theme"]],
   "linked": [],
   "updateInternalDependencies": "patch",
-  "ignore": ["@uglifruits/components", "@uglifruits/docs", "@uglifruits/play"]
+  "ignore": [
+    "@uglifruits/components",
+    "@uglifruits/docs",
+    "@uglifruits/play",
+    "@uglifruits/theme",
+    "@uglifruits/utils"
+  ]
 }
