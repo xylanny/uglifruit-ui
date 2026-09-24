@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.9.0
+
+### Minor Changes
+
+- 0321155: 注册切换按钮组件
+
 ## 0.8.0
 
 ### Minor Changes
