@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.5.0
+
+### Minor Changes
+
+- ed0e199: 注册提示组件
+
 ## 0.4.1
 
 ### Patch Changes
