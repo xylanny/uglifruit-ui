@@ -1,5 +1,11 @@
 # @uglifruits/utils
 
+## 0.5.2
+
+### Patch Changes
+
+- ef87c5e: 补充创建Github Release逻辑
+
 ## 0.5.1
 
 ### Patch Changes
