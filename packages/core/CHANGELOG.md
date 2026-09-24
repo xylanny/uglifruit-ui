@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.4.0
+
+### Minor Changes
+
+- ff54c82: 注册按钮组件
+
 ## 0.3.5
 
 ### Patch Changes
