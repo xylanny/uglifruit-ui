@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.7.0
+
+### Minor Changes
+
+- 27cbd32: 注册输入框组件
+
 ## 0.6.2
 
 ### Patch Changes
