@@ -71,6 +71,7 @@ const onClick = (e: MouseEvent) => {
   }
 };
 
+// DOM引用
 const _ref = ref<HTMLButtonElement | null>(null);
 
 defineExpose<ButtonExpose>({
