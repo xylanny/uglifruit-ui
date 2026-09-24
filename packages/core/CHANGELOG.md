@@ -1,5 +1,11 @@
 # @uglifruits/ui
 
+## 0.6.1
+
+### Patch Changes
+
+- 38bd068: 修改构建配置
+
 ## 0.6.0
 
 ### Minor Changes
