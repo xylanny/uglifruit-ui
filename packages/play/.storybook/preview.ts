@@ -9,6 +9,10 @@ import {
   faStar,
   faUser,
   faXmark,
+  faCircleCheck,
+  faTriangleExclamation,
+  faCircleXmark,
+  faCircleInfo,
 } from "@fortawesome/free-solid-svg-icons";
 import type { Preview } from "@storybook/vue3-vite";
 import "@uglifruits/theme/index.css"; // 全局样式导入
@@ -23,6 +27,10 @@ library.add(
   faXmark,
   faPlus,
   faAngleRight,
+  faCircleCheck,
+  faTriangleExclamation,
+  faCircleXmark,
+  faCircleInfo,
 );
 
 // 在浏览器环境运行的前置配置
