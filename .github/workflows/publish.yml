@@ -53,3 +53,31 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
+
+      - name: Create GitHub Releases from tags
+        if: always()
+        run: |
+          git fetch --tags
+
+          # 找出当前commit指向的所有tag
+          TAGS=$(git tag --points-at HEAD)
+          if [ -z "$TAGS" ]; then
+            echo "No tags on current commit, skipping"
+            exit 0
+          fi
+
+          echo "Tags on current commit:"
+          echo "$TAGS"
+
+          for tag in $TAGS; do
+            if gh release view "$tag" > /dev/null 2>&1; then
+              echo "Release $tag already exists, skipping"
+            else
+              echo "Creating release for $tag"
+              gh release create "$tag" \
+                --title "$tag" \
+                --generate-notes
+            fi
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
