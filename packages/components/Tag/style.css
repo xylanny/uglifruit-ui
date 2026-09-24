@@ -1,0 +1,210 @@
+.u-tag {
+    --u-tag-bg-color: var(--u-color-primary-light);
+    --u-tag-text-color: var(--u-color-primary);
+    --u-tag-border-color: var(--u-color-primary-lighter);
+    --u-tag-hover-bg-color: var(--u-color-primary);
+    --u-tag-hover-text-color: var(--u-color-white);
+    --u-tag-hover-border-color: var(--u-color-primary);
+
+    --u-tag-height: 24px;
+    --u-tag-padding-horizontal: 8px;
+    --u-tag-font-size: var(--u-font-size-sm);
+    --u-tag-border-radius: var(--u-border-radius-base);
+    --u-tag-icon-size: 12px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    box-sizing: border-box;
+    height: var(--u-tag-height);
+    padding: 0 var(--u-tag-padding-horizontal);
+    font-family: var(--u-font-family);
+    font-size: var(--u-tag-font-size);
+    line-height: 1;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: var(--u-tag-text-color);
+    background-color: var(--u-tag-bg-color);
+    border: 1px solid var(--u-tag-border-color);
+    border-radius: var(--u-tag-border-radius);
+    transition: var(--u-transition-base);
+    cursor: default;
+}
+
+
+.u-tag--large {
+    --u-tag-height: 32px;
+    --u-tag-padding-horizontal: 12px;
+    --u-tag-font-size: var(--u-font-size-base);
+    --u-tag-icon-size: 14px;
+}
+
+.u-tag--small {
+    --u-tag-height: 20px;
+    --u-tag-padding-horizontal: 6px;
+    --u-tag-font-size: var(--u-font-size-sm);
+    --u-tag-icon-size: 10px;
+}
+
+
+.u-tag--success {
+    --u-tag-bg-color: var(--u-color-success-light);
+    --u-tag-text-color: var(--u-color-success);
+    --u-tag-border-color: var(--u-color-success-lighter);
+    --u-tag-hover-bg-color: var(--u-color-success);
+    --u-tag-hover-border-color: var(--u-color-success);
+}
+
+.u-tag--warning {
+    --u-tag-bg-color: var(--u-color-warning-light);
+    --u-tag-text-color: var(--u-color-warning);
+    --u-tag-border-color: var(--u-color-warning-lighter);
+    --u-tag-hover-bg-color: var(--u-color-warning);
+    --u-tag-hover-border-color: var(--u-color-warning);
+}
+
+.u-tag--danger {
+    --u-tag-bg-color: var(--u-color-danger-light);
+    --u-tag-text-color: var(--u-color-danger);
+    --u-tag-border-color: var(--u-color-danger-lighter);
+    --u-tag-hover-bg-color: var(--u-color-danger);
+    --u-tag-hover-border-color: var(--u-color-danger);
+}
+
+.u-tag--info {
+    --u-tag-bg-color: var(--u-color-info-light);
+    --u-tag-text-color: var(--u-color-info);
+    --u-tag-border-color: var(--u-color-info-lighter);
+    --u-tag-hover-bg-color: var(--u-color-info);
+    --u-tag-hover-border-color: var(--u-color-info);
+}
+
+
+.u-tag--dark {
+    --u-tag-text-color: var(--u-color-white);
+    --u-tag-border-color: transparent;
+    --u-tag-hover-text-color: var(--u-color-white);
+}
+
+.u-tag--primary.u-tag--dark {
+    --u-tag-bg-color: var(--u-color-primary);
+    --u-tag-hover-bg-color: var(--u-color-primary-dark);
+    --u-tag-hover-border-color: var(--u-color-primary-dark);
+}
+
+.u-tag--success.u-tag--dark {
+    --u-tag-bg-color: var(--u-color-success);
+    --u-tag-hover-bg-color: var(--u-color-success-dark);
+    --u-tag-hover-border-color: var(--u-color-success-dark);
+}
+
+.u-tag--warning.u-tag--dark {
+    --u-tag-bg-color: var(--u-color-warning);
+    --u-tag-hover-bg-color: var(--u-color-warning-dark);
+    --u-tag-hover-border-color: var(--u-color-warning-dark);
+}
+
+.u-tag--danger.u-tag--dark {
+    --u-tag-bg-color: var(--u-color-danger);
+    --u-tag-hover-bg-color: var(--u-color-danger-dark);
+    --u-tag-hover-border-color: var(--u-color-danger-dark);
+}
+
+.u-tag--info.u-tag--dark {
+    --u-tag-bg-color: var(--u-color-info);
+    --u-tag-hover-bg-color: var(--u-color-info-dark);
+    --u-tag-hover-border-color: var(--u-color-info-dark);
+}
+
+
+.u-tag--plain {
+    --u-tag-bg-color: transparent;
+}
+
+.u-tag--primary.u-tag--plain {
+    --u-tag-text-color: var(--u-color-primary);
+    --u-tag-border-color: var(--u-color-primary);
+    --u-tag-hover-bg-color: var(--u-color-primary);
+}
+
+.u-tag--success.u-tag--plain {
+    --u-tag-text-color: var(--u-color-success);
+    --u-tag-border-color: var(--u-color-success);
+    --u-tag-hover-bg-color: var(--u-color-success);
+}
+
+.u-tag--warning.u-tag--plain {
+    --u-tag-text-color: var(--u-color-warning);
+    --u-tag-border-color: var(--u-color-warning);
+    --u-tag-hover-bg-color: var(--u-color-warning);
+}
+
+.u-tag--danger.u-tag--plain {
+    --u-tag-text-color: var(--u-color-danger);
+    --u-tag-border-color: var(--u-color-danger);
+    --u-tag-hover-bg-color: var(--u-color-danger);
+}
+
+.u-tag--info.u-tag--plain {
+    --u-tag-text-color: var(--u-color-info);
+    --u-tag-border-color: var(--u-color-info);
+    --u-tag-hover-bg-color: var(--u-color-info);
+}
+
+.u-tag.is-round {
+    --u-tag-border-radius: var(--u-border-radius-round);
+}
+
+.u-tag.is-closable {
+    padding-right: calc(var(--u-tag-padding-horizontal) - 2px);
+}
+
+.u-tag:not(.is-disabled):hover {
+    background-color: var(--u-tag-hover-bg-color);
+    color: var(--u-tag-hover-text-color);
+    border-color: var(--u-tag-hover-border-color);
+}
+
+.u-tag--plain:not(.is-disabled):hover {
+    color: var(--u-color-white);
+}
+
+.u-tag.is-disabled {
+    --u-tag-bg-color: var(--u-color-bg-disabled);
+    --u-tag-text-color: var(--u-color-text-disabled);
+    --u-tag-border-color: var(--u-color-border-light);
+    --u-tag-hover-bg-color: var(--u-color-bg-disabled);
+    --u-tag-hover-text-color: var(--u-color-text-disabled);
+    --u-tag-hover-border-color: var(--u-color-border-light);
+
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.u-tag__content {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.u-tag__close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--u-tag-icon-size);
+    height: var(--u-tag-icon-size);
+    font-size: var(--u-tag-icon-size);
+    color: currentcolor;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: var(--u-transition-base);
+    flex-shrink: 0;
+}
+
+.u-tag__close:hover {
+    opacity: 1;
+}
+
+.u-tag.is-disabled .u-tag__close {
+    cursor: not-allowed;
+}
