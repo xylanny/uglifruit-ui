@@ -38,6 +38,7 @@
       class="u-input__clear-icon"
       icon="circle-xmark"
       size="1x"
+      @mousedown.prevent
       @click="clear"
     />
 
