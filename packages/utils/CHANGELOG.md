@@ -1,5 +1,11 @@
 # @uglifruits/utils
 
+## 0.5.1
+
+### Patch Changes
+
+- a63b910: 上次由于自动化配置的问题，而导致0.5.0版本号不能再次使用
+
 ## 0.5.0
 
 No changes in this release.
