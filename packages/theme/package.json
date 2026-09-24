@@ -1,6 +1,27 @@
 {
   "name": "@uglifruits/theme",
-  "private": true,
+  "version": "0.5.2",
+  "exports": {
+    ".": "./index.css",
+    "./index.css": "./index.css",
+    "./reset.css": "./reset.css"
+  },
+  "files": [
+    "index.css",
+    "reset.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xylanny/uglifruit-ui"
+  },
+  "description": "Theme styles for uglifruits UI",
+  "keywords": [
+    "theme",
+    "colorful",
+    "easy"
+  ],
+  "author": "xylanny",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"just test placeholder!\" && exit 0"
   }
