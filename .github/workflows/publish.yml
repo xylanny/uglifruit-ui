@@ -54,12 +54,11 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
 
-      - name: Create GitHub Releases from tags
+      - name: Push tags and create GitHub Releases
         if: always()
         run: |
           git fetch --tags
 
-          # 找出当前commit指向的所有tag
           TAGS=$(git tag --points-at HEAD)
           if [ -z "$TAGS" ]; then
             echo "No tags on current commit, skipping"
@@ -69,6 +68,18 @@ jobs:
           echo "Tags on current commit:"
           echo "$TAGS"
 
+          # 先把本地tag推到远端，否则gh release create 会报
+          #    "tag exists locally but has not been pushed"
+          for tag in $TAGS; do
+            if git ls-remote --tags origin "refs/tags/$tag" | grep -q "refs/tags/$tag"; then
+              echo "Tag $tag already on remote"
+            else
+              echo "Pushing tag $tag to remote"
+              git push origin "$tag"
+            fi
+          done
+
+          # 再创建 Release，已存在则跳过
           for tag in $TAGS; do
             if gh release view "$tag" > /dev/null 2>&1; then
               echo "Release $tag already exists, skipping"
